@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.main-content {
+    padding: 0 4rem;
+}
+
+.main-content img {
+    max-width: 65%;
+    display: block;
+    margin: 1rem auto 3rem;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    color: darkcyan;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-content button {
+    padding: 0.8rem;
+    background: darkcyan;
+    border: none;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: all 0.2s linear;
+}
+
+.main-content button:hover {
+    background: white;
+    border: 2px solid darkcyan;
+    color: darkcyan;
+}
+
+.movie-content {
+    position: absolute;
+    position: fixed;
+    background: black;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+.movie-content.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.movie-content .video {
+    max-width: 80%;
+    display: block;
+    margin: 2.5rem auto;
+}
+
+.movie-content .close {
+    position: absolute;
+    top: 0;
+    left: 93%;
+    font-size: 2rem;
+    font-weight: 700;
+    background: darkcyan;
+    color: white;
+    border-radius: 50%;
+    margin-top: 10px;
+}
